@@ -17,7 +17,6 @@
           <span class="md-error">There is an error</span>
         </md-field>
         <md-button class="md-raised md-primary" @click="setDone('second', 'third')">Continue</md-button>
-        <md-button class="md-raised md-primary" @click="setError()">Set error!</md-button>
       </md-step>
 
       <md-step id="third" md-label="Third Step" :md-error="steps.thirdStepError" :md-done.sync="steps.third" md-description="Edit email">
@@ -92,6 +91,10 @@
     methods: {
       setDone (id, index) {
         this.steps[id] = true
+
+        let validEmail = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+        let valiePhone = /^\d[\d\(\)\ -]{4,14}\d$/;
+
 
         if (!this.users[0].name) return this.steps.firstStepError = 'Input user name'
         if (!this.users[0].phone) return this.steps.secondStepError = 'Input user phone'
