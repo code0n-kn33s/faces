@@ -1,29 +1,4 @@
-# users
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+In file src/api.js get request to server
+api: https://randomuser.me/api/?results=5
+---> obj to string ---> send to localStorage ---> from localStorage put info to component
+---> render to list to html

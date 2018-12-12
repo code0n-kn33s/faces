@@ -1,25 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Table from './views/users-table.vue'
+import Edit from "./views/users-edit.vue"
+import Blog from "./views/users-blog.vue"
+import About from "./views/users-about.vue"
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: "/",
+      name: "Table",
+      component: Table
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: "/edit/:id",
+      name: "Edit",
+      component: Edit
+    },
+    {
+      path: "/blog",
+      name: "Blog",
+      component: Blog
+    },
+    {
+      path: "/about",
+      name: "About",
+      component: About
     }
   ]
-})
+});

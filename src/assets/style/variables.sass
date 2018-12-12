@@ -1,0 +1,16 @@
+$color-link: #2c3e50
+$border: 1px solid #616161
+$deep-dark-color: #212121
+$dark-color: #424242
+$low-dark-color: #616161
+$padding-table-item: 6px 32px 6px 24px
+$transition: cubic-bezier(0.4, 0, 0.2, 1)
+
+
+@mixin clearfix
+  &:after,
+  &:before
+      display: table
+      content: ""
+  &:after
+      clear: both
