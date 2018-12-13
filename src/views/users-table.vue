@@ -6,6 +6,7 @@
 
 <script>
 import usersSlot from './../components/users-slot';
+import users from '../api.js'
 
 export default {
   components: {

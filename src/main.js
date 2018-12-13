@@ -11,7 +11,6 @@ import "vue-material/dist/theme/default-dark.css";
 
 Vue.use(VueMaterial);
 Vue.use(VueAxios, axios);
-Vue.use(users);
 Vue.config.productionTip = false
 
 new Vue({

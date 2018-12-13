@@ -23,7 +23,6 @@ export default {
   .notes {
     min-height: 70px;
   }
-
   .md-speed-dial-content {
     flex-direction: row-reverse;
     button {

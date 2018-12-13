@@ -25,41 +25,12 @@
 
 <script>
 export default {
-  name: 'TabContent',
-  props: {
-    href: String,
-    required: true,
-    blog: '/blog'
-  }
+  name: 'TabContent'
 }
 </script>
 
 <style lang="scss">
   * {
     color: white
-  }
-  .header {
-    background: #424242;
-    &-list {
-      display: flex;
-      &-item {
-        margin-left: 10px;
-        padding: 4px;
-        a {
-          color: transparent !important
-        }
-      }
-    }
-    &-label {
-      text-align: center;
-    }
-  }
-  .router-link-exact-active {
-    i {
-      color: #448aff !important;
-    }
-    div {
-      color: #448aff !important;
-    }
   }
 </style>

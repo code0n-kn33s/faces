@@ -30,11 +30,7 @@ export default {
       let routeItem = this.$route.params.id
 
       return users.filter(u => u.id == routeItem)
-    },
-    cl() {
-      console.log(this.users[0].name);
     }
-
   }
 }
 </script>
